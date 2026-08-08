@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Works | Hülya Uşan</title>
+<meta name="description" content="Works by Hülya Uşan in Ebru, Katı', traditional bookbinding, watercolor and oil painting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Hülya Uşan<span>Art Portfolio</span></a>
+    <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="biography.html">Biography</a></li>
+      <li><a href="works.html" class="active">Works</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="../eserler.html" class="lang-link">TR</a></li>
+    </ul>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="eyebrow">Portfolio</span>
+      <h1>Works</h1>
+      <p>Browse the works by filtering by category.</p>
+    </div>
+
+    <div class="note">
+      Each card represents one artwork — image only, no title. To add a new
+      work, copy a <code>.work-card</code> block in this file and update the
+      photo and category. Place photos in the matching folder
+      (<code>../ebru</code>, <code>../kat-i</code>,
+      <code>../geleneksel-cilt</code>, <code>../sulu boya</code>,
+      <code>../yagli-boya</code>) and set the <code>src</code> path accordingly.
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="tumu">All</button>
+      <button class="filter-btn" data-filter="ebru">Ebru</button>
+      <button class="filter-btn" data-filter="kat-i">Katı'</button>
+      <button class="filter-btn" data-filter="geleneksel-cilt">Bookbinding</button>
+      <button class="filter-btn" data-filter="suluboya">Watercolor</button>
+      <button class="filter-btn" data-filter="yagli-boya">Oil Painting</button>
+    </div>
+
+    <div class="works-grid reveal-group">
+
+      <!-- ============ EBRU EXAMPLE ============ -->
+      <div class="work-card" id="ebru" data-category="ebru">
+        <div class="thumb">
+          <!-- <img src="../ebru/eser1.jpg" alt="Ebru artwork"> -->
+          Ebru photo coming soon
+        </div>
+      </div>
+
+      <!-- ============ KAT'I EXAMPLE ============ -->
+      <div class="work-card" id="kat-i" data-category="kat-i">
+        <div class="thumb">
+          <!-- <img src="../kat-i/eser1.jpg" alt="Katı' artwork"> -->
+          Katı' photo coming soon
+        </div>
+      </div>
+
+      <!-- ============ BOOKBINDING EXAMPLE ============ -->
+      <div class="work-card" id="geleneksel-cilt" data-category="geleneksel-cilt">
+        <div class="thumb">
+          <!-- <img src="../geleneksel-cilt/eser1.jpg" alt="Traditional bookbinding artwork"> -->
+          Bookbinding photo coming soon
+        </div>
+      </div>
+
+      <!-- ============ WATERCOLOR EXAMPLE ============ -->
+      <div class="work-card" id="suluboya" data-category="suluboya">
+        <div class="thumb">
+          <!-- <img src="../sulu%20boya/eser1.jpg" alt="Watercolor artwork"> -->
+          Watercolor photo coming soon
+        </div>
+      </div>
+
+      <!-- ============ OIL PAINTING EXAMPLE ============ -->
+      <div class="work-card" id="yagli-boya" data-category="yagli-boya">
+        <div class="thumb">
+          <!-- <img src="../yagli-boya/eser1.jpg" alt="Oil painting artwork"> -->
+          Oil painting photo coming soon
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="biography.html">Biography</a>
+      <a href="works.html">Works</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; <span id="year"></span> Hülya Uşan. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

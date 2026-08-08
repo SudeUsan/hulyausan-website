@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hülya Uşan | Sanat Portfolyosu</title>
+<meta name="description" content="Hülya Uşan — Ebru, Kat'ı, geleneksel cilt, sulu boya ve yağlı boya sanatçısı. Eserler, biyografi ve iletişim.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Hülya Uşan<span>Sanat Portfolyosu</span></a>
+    <button class="nav-toggle" aria-label="Menüyü aç">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Ana Sayfa</a></li>
+      <li><a href="biyografi.html">Biyografi</a></li>
+      <li><a href="eserler.html">Eserler</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="en/index.html" class="lang-link">EN</a></li>
+    </ul>
+  </div>
+</header>
+
+<!--
+  NOT: Aşağıdaki hero görselini değiştirmek için:
+  1) Güzel bir eser fotoğrafını "images/hero.jpg" olarak kaydedin
+     (images klasörü yoksa oluşturun).
+  2) .hero.no-image class'ını kaldırıp aşağıdaki gibi stil ekleyin:
+     style="background-image: url('images/hero.jpg');"
+-->
+<section class="hero no-image">
+  <div class="container">
+    <div class="hero-content">
+      <span class="eyebrow">Ebru · Kat'ı · Geleneksel Cilt · Sulu Boya · Yağlı Boya</span>
+      <h1>Hülya Uşan</h1>
+      <a href="eserler.html" class="btn btn-light">Eserleri Keşfet</a>
+    </div>
+  </div>
+</section>
+
+<section class="category-strip reveal-group">
+  <a class="category-card" href="eserler.html#ebru">
+    <!-- <img src="ebru/kapak.jpg" alt="Ebru"> ekleyerek görsel koyabilirsiniz -->
+    <div class="overlay"><h3>Ebru</h3></div>
+  </a>
+  <a class="category-card" href="eserler.html#kat-i">
+    <!-- <img src="kat-i/kapak.jpg" alt="Kat'ı"> -->
+    <div class="overlay"><h3>Kat'ı</h3></div>
+  </a>
+  <a class="category-card" href="eserler.html#geleneksel-cilt">
+    <!-- <img src="geleneksel-cilt/kapak.jpg" alt="Geleneksel Cilt"> -->
+    <div class="overlay"><h3>Geleneksel Cilt</h3></div>
+  </a>
+  <a class="category-card" href="eserler.html#suluboya">
+    <!-- <img src="sulu%20boya/kapak.jpg" alt="Sulu Boya"> -->
+    <div class="overlay"><h3>Sulu Boya</h3></div>
+  </a>
+  <a class="category-card" href="eserler.html#yagli-boya">
+    <!-- <img src="yagli-boya/kapak.jpg" alt="Yağlı Boya"> -->
+    <div class="overlay"><h3>Yağlı Boya</h3></div>
+  </a>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="biyografi.html">Biyografi</a>
+      <a href="eserler.html">Eserler</a>
+      <a href="iletisim.html">İletişim</a>
+    </div>
+    <p>&copy; <span id="year"></span> Hülya Uşan. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eserler | Hülya Uşan</title>
+<meta name="description" content="Hülya Uşan'ın ebru, kat'ı, geleneksel cilt, sulu boya ve yağlı boya eserleri.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Hülya Uşan<span>Sanat Portfolyosu</span></a>
+    <button class="nav-toggle" aria-label="Menüyü aç">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="biyografi.html">Biyografi</a></li>
+      <li><a href="eserler.html" class="active">Eserler</a></li>
+      <li><a href="iletisim.html">İletişim</a></li>
+      <li><a href="en/works.html" class="lang-link">EN</a></li>
+    </ul>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="eyebrow">Portfolyo</span>
+      <h1>Eserler</h1>
+      <p>Kategoriye göre filtreleyerek eserlere göz atabilirsiniz.</p>
+    </div>
+
+    <div class="note">
+      Her kart bir eseri temsil eder — sadece fotoğraf, başlık yok. Yeni bir
+      eser eklemek için bu dosyadaki bir <code>.work-card</code> bloğunu
+      kopyalayıp fotoğrafı ve kategorisini değiştirmeniz yeterli. Fotoğrafları
+      ilgili klasöre (<code>ebru</code>, <code>kat-i</code>,
+      <code>geleneksel-cilt</code>, <code>sulu boya</code>,
+      <code>yagli-boya</code>) koyup <code>src</code> yolunu ona göre ayarlayın.
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="tumu">Tümü</button>
+      <button class="filter-btn" data-filter="ebru">Ebru</button>
+      <button class="filter-btn" data-filter="kat-i">Kat'ı</button>
+      <button class="filter-btn" data-filter="geleneksel-cilt">Geleneksel Cilt</button>
+      <button class="filter-btn" data-filter="suluboya">Sulu Boya</button>
+      <button class="filter-btn" data-filter="yagli-boya">Yağlı Boya</button>
+    </div>
+
+    <div class="works-grid reveal-group">
+
+      <!-- ============ EBRU ÖRNEK ============ -->
+      <div class="work-card" id="ebru" data-category="ebru">
+        <div class="thumb">
+          <!-- <img src="ebru/eser1.jpg" alt="Ebru eseri"> -->
+          Ebru fotoğrafı eklenecek
+        </div>
+      </div>
+
+      <!-- ============ KAT'I ÖRNEK ============ -->
+      <div class="work-card" id="kat-i" data-category="kat-i">
+        <div class="thumb">
+          <!-- <img src="kat-i/eser1.jpg" alt="Kat'ı eseri"> -->
+          Kat'ı fotoğrafı eklenecek
+        </div>
+      </div>
+
+      <!-- ============ GELENEKSEL CİLT ÖRNEK ============ -->
+      <div class="work-card" id="geleneksel-cilt" data-category="geleneksel-cilt">
+        <div class="thumb">
+          <!-- <img src="geleneksel-cilt/eser1.jpg" alt="Geleneksel cilt eseri"> -->
+          Geleneksel cilt fotoğrafı eklenecek
+        </div>
+      </div>
+
+      <!-- ============ SULU BOYA ÖRNEK ============ -->
+      <div class="work-card" id="suluboya" data-category="suluboya">
+        <div class="thumb">
+          <!-- <img src="sulu%20boya/eser1.jpg" alt="Sulu boya eseri"> -->
+          Sulu boya fotoğrafı eklenecek
+        </div>
+      </div>
+
+      <!-- ============ YAĞLI BOYA ÖRNEK ============ -->
+      <div class="work-card" id="yagli-boya" data-category="yagli-boya">
+        <div class="thumb">
+          <!-- <img src="yagli-boya/eser1.jpg" alt="Yağlı boya eseri"> -->
+          Yağlı boya fotoğrafı eklenecek
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="biyografi.html">Biyografi</a>
+      <a href="eserler.html">Eserler</a>
+      <a href="iletisim.html">İletişim</a>
+    </div>
+    <p>&copy; <span id="year"></span> Hülya Uşan. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

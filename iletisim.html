@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İletişim | Hülya Uşan</title>
+<meta name="description" content="Hülya Uşan ile iletişime geçin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">Hülya Uşan<span>Sanat Portfolyosu</span></a>
+    <button class="nav-toggle" aria-label="Menüyü aç">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="biyografi.html">Biyografi</a></li>
+      <li><a href="eserler.html">Eserler</a></li>
+      <li><a href="iletisim.html" class="active">İletişim</a></li>
+      <li><a href="en/contact.html" class="lang-link">EN</a></li>
+    </ul>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="eyebrow">Bize Ulaşın</span>
+      <h1>İletişim</h1>
+      <p>Sipariş, sergi davetleri veya işbirliği teklifleri için iletişime geçebilirsiniz.</p>
+    </div>
+
+    <div class="note">
+      Aşağıdaki e-posta, telefon ve sosyal medya bilgileri örnektir —
+      Hülya Hanım'ın paylaşmak istediği gerçek bilgilerle değiştirilecektir.
+      Form şu an sadece görsel amaçlıdır; gönderim özelliği eklenecektir
+      (ör. Formspree gibi ücretsiz bir servisle bağlanabilir).
+    </div>
+
+    <div class="contact-layout reveal-group">
+      <div class="contact-info">
+        <div class="item">
+          <span>E-posta</span>
+          <a href="mailto:info@hulyausan.com">info@hulyausan.com</a>
+        </div>
+        <div class="item">
+          <span>Telefon</span>
+          <a href="tel:+900000000000">+90 (5xx) xxx xx xx</a>
+        </div>
+        <div class="item">
+          <span>Instagram</span>
+          <a href="https://www.instagram.com/hulyausan/" target="_blank" rel="noopener">@hulyausan</a>
+        </div>
+        <div class="item">
+          <span>Konum</span>
+          Ankara, Türkiye
+        </div>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Adınız Soyadınız" required>
+        <input type="email" placeholder="E-posta Adresiniz" required>
+        <textarea placeholder="Mesajınız" required></textarea>
+        <button type="submit" class="btn btn-dark">Gönder</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="biyografi.html">Biyografi</a>
+      <a href="eserler.html">Eserler</a>
+      <a href="iletisim.html">İletişim</a>
+    </div>
+    <p>&copy; <span id="year"></span> Hülya Uşan. Tüm hakları saklıdır.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
